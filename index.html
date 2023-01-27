@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cousine:ital@1&display=swap');
+    </style> 
+
+    <title>Responsividade</title>
+</head>
+<body id="body">
+    <main id="main">
+        <header class="bg-header" id="header">
+            <nav class="menu">
+                <span class="hamburger-menu" id="hamburger-menu">☰</span>
+                <ul class="sub-menu" id="sub-menu">
+                    <li><a href="#modal" class="list-item" id="first_li">TodoList</a></li>
+                    <li><a href="https://github.com/onzeoyto" class="list-item" target="_blank" id="github">Github</a></li>
+                    <li><a href="#versao" class="list-item" id="linkedin">Linkedin</a></li>
+                </ul>
+                <input type="text" class="input_task" id="input_task" maxlength="80" placeholder="Digite sua tarefa...">
+                <span class="bolsonaro">#Brazil 🇧🇷 </span>
+            </nav>
+        </header>
+        <div class="bg-conteudo" id="conteudo">
+        </div>
+    </main>
+
+
+
+
+
+    <!-- MODAL TODO-LIST -->
+    <dialog class="modal-todolist" id="modal-todolist">
+        <p>
+            O que é uma todo list?<br><br>
+            Uma to do list é uma lista de tarefas, de coisas que precisam ser feitas. É uma forma de organizar as atividades que não podem ser esquecidas, e que não estão inseridas na nossa rotina.<br> É diferente de uma agenda, onde as atividades tem dia e hora para acontecer.</p>
+        <span class="close">✕</span>
+    </dialog>
+
+
+
+
+    
+    <!-- MODAL EDITAR/DELETAR TAREFA -->
+    <dialog class="modal-update" id="modal-update">
+        <div class="style-button">
+            <span class="close">✕</span>
+            <button type="button" class="btn" id="editar">Editar</button>
+            <button type="button" class="btn" id="deletar">Deletar</button>
+        </div>
+    </dialog>
+
+
+
+
+    <dialog class="edit-task" id="edit-task">
+        <p class="txt-edit">Edite sua tarefa</p>
+        <input type="text" class="edit" id="edit" maxlength="80" placeholder="">
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
